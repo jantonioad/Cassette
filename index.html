@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Adivina buen adivinador</title>
+		<meta name="description" content="Some ideas for CSS-only button hover styles and animations" />
+		<meta name="keywords" content="button, hover, css, css-only, animation, style, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/rnz2bks.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script src="https://jantonioad.github.io/cassette/"></script>
+		<style>
+			body #cdawrap {
+				background-image: url("Fondo.jpg");
+				border: 1px solid #000;
+				--cda-bottom: auto;
+				--cda-right: 3.5rem;
+				--cda-left: auto;
+				--cda-text-align: right;
+				--cda-width: 370px;
+				border-radius: 6px;
+				padding: 0.75rem 1rem 1rem;
+				--footer-align: end;
+				--cda-text-size: 0.875rem;
+				--cda-footer-fontsize: 0.785rem;
+				--cda-text-color: rgb(255, 255, 255);
+				position: absolute;
+				transform: translateY(-150%);
+			}
+			@media screen and (max-width: 800px){
+				body #cdawrap {
+					transform: none;
+					border-radius: 0px;
+				}
+			}
+		</style>
+	</head>
+	<body class="demo-1">
+		<main>
+			<header class="frame frame--header">
+				<div class="frame__title-wrap">
+					<h1 class="frame__title">Para pasar debes adivinar</h1>
+					<p class="frame__tagline">Cuidado con darte vueltas</p>
+					<div class="frame__related">
+						<h3>Para saber más acá</h3>
+						<p><a href="https://jantonioad.github.io/cassette/">Avanzar</a></p>
+					</div>
+				</div>
+				<nav class="frame__links">
+					<a href="https://jantonioad.github.io/cassette/">Seguir</a>
+					<a href="https://jantonioad.github.io/cassette/">Siguiente</a>
+					<a href="https://github.com/codrops/ButtonHoverStyles/"><svg class="github" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub icon</title><path fill="#000" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+				</nav>
+			</header>
+			<ol class="content">
+				<li class="content__item">
+					</a><button class="button button--pan"></a><span>Acá no</span></button>
+				</li>
+				<li class="content__item">
+					<button class="button button--hyperion"><span><span>Quizás acá</span></span></button>
+				</li>
+				<li class="content__item">
+					<button class="button button--mimas"><span>Muy seguro de que acá no es</span></button>
+				</li>
+				<li class="content__item">
+					<button class="button button--atlas">
+						<span>Hay una posibilidad</span>
+						<div class="marquee" aria-hidden="true">
+							<div class="marquee__inner">
+								<span>NO</span>
+								<span>NO</span>
+								<span>NO</span>
+								<span>NO</span>
+							</div>
+						</div>
+					</button>
+				</li>
+				<li class="content__item">
+					<button class="button button--kari">
+						<span>Me siento con suerte</span>
+						<div class="marquee" aria-hidden="true">
+							<div class="marquee__inner">
+								<span>SI</span>
+								<span>SI</span>
+								<span>SI</span>
+								<span>SI</span>
+							</div>
+						</div>
+					</button>
+				</li>
+				<li class="content__item">
+					<button class="button button--pandora"><span>Frío Frío</span></button>
+				</li>
+				<li class="content__item">
+					<button class="button button--janus"><span>0 Chances</span></button>
+				</li>
+				<li class="content__item">
+					<button class="button button--anthe"><span>Esta es</span></button>
+				</li>
+				<li class="content__item">
+					<button class="button button--pallene">Confía en esta</button>
+				</li>
+				<li class="content__item">
+					<button class="button button--telesto"><span><span>No soy un robot</span></span></button>
+				</li>
+				<li class="content__item">
+					<button class="button button--calypso"><span>Error 404</span></button>
+				</li>
+				<li class="content__item">
+					<button class="button button--skoll"><span><span>PASE</span></span></button>
+				</li>
+			
+				<li class="content__item">
+					<button class="button button--dione"><span>Lo prometo</span></button>
+				</li>
+				<li class="content__item">
+					<button class="button button--helene"><span><span>La última</span></span></button>
+				</li>
+				
+				
+		
+			</ol>
+			<section class="related">
+				<h3>Aprétame</h3>
+				<a href="https://jantonioad.github.io/cassette/">Intenta salir por acá</a>
+			</section>
+			<footer class="frame frame--footer">
+				<div class="frame__author"><a href="https://tivaldes.github.io/intento3/">Salir</a></div>
+			</footer>
+		</main>
+		<script src="https://jantonioad.github.io/cassette/"></script>
+		<body background="Fondo.jpg">
+	</body>
+</html>
